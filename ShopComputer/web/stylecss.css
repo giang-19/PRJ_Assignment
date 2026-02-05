@@ -1,0 +1,158 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Feb 5, 2026, 12:42:21 AM
+    Author     : AnMD
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background: #f5f6fa;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    background: #111827;
+    color: #fff;
+    height: 100vh;
+    padding: 20px;
+    border-radius: 8px;
+}
+.sidebar a{
+    text-decoration: none;
+    color: white;
+}
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li {
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.sidebar ul li:hover,
+.sidebar ul li.active {
+    background: #ef4444;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    padding: 25px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #000000;
+}
+.header h1 {
+    font-size: 32px;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.card h3 {
+    font-size: 14px;
+    color: black;
+}
+.card p {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/* Charts placeholder */
+.charts {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: stretch;
+}
+.chart {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Table */
+table {
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+.table-wrapper {
+    max-height: 320px;
+    overflow-y: auto;
+    border-radius: 12px;
+}
+
+table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+table thead {
+    background: #ef4444;
+    color: #fff;
+}
+table th, table td {
+    padding: 14px;
+    text-align: left;
+}
+table tbody tr:nth-child(even) {
+    background: #f9fafb;
+}
+
+/*search*/
+.search{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: #000000;
+    padding-bottom: 15px;
+}
+
+.search input{
+    padding: 5px;
+}
+.search button{
+    padding-left: 5px;
+    font-size: 20px
+}
+
+
